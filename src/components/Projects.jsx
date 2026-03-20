@@ -32,27 +32,31 @@ export default function Projects() {
     <section>
       <h2>Projetos</h2>
 
-      {projects.map((p, i) => (
-        <motion.div
-          key={i}
-          className="card"
-          initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <img
-            src={`${p.img}?auto=format&fit=crop&w=1000&q=80`}
-            alt="project"
-            style={{
-              width: "100%",
-              borderRadius: "12px",
-              marginBottom: "20px"
-            }}
-          />
-          <h3>{p.title}</h3>
-          <p>{p.desc}</p>
-        </motion.div>
-      ))}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
+        {projects.map((p, i) => (
+          <motion.div
+            key={i}
+            className="card"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: i * 0.1 }}
+          >
+            <img
+              src={`${p.img}?auto=format&fit=crop&w=1000&q=80`}
+              alt={p.title}
+              style={{
+                width: "100%",
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "12px",
+                marginBottom: "20px"
+              }}
+            />
+            <h3 style={{ marginBottom: "15px" }}>{p.title}</h3>
+            <p style={{ opacity: 0.8, lineHeight: "1.6" }}>{p.desc}</p>
+          </motion.div>
+        ))}
+      </div>
     </section>
   );
 }

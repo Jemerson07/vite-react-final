@@ -15,9 +15,10 @@ export default function Contact() {
 
         <p>
           <strong>LinkedIn:</strong>
-          https://www.linkedin.com/in/jemerson-santos"
+          <a href="https://www.linkedin.com/in/jemerson-santos"
             className="contact-btn"
             target="_blank"
+            rel="noopener noreferrer"
           >
             🔗 Acessar LinkedIn
           </a>
@@ -25,6 +26,13 @@ export default function Contact() {
 
         <p>
           <strong>WhatsApp:</strong>  
+          <a href="https://wa.me/5581985332616" 
+            className="contact-btn" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            💬 Enviar Mensagem
+          </a>
         </p>
       </motion.div>
     </section>

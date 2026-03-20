@@ -1,35 +1,36 @@
 import { motion } from "framer-motion";
 
-export default function About() {
+export default function Skills() {
+  const skills = [
+    { name: "Inteligência Artificial & Machine Learning", level: "Avançado" },
+    { name: "Análise de Dados & BI", level: "Especialista" },
+    { name: "Automação de Processos", level: "Avançado" },
+    { name: "Cloud Computing (AWS)", level: "Intermediário" },
+    { name: "Cybersecurity Essentials", level: "Intermediário" },
+    { name: "Desenvolvimento de Sistemas (ADS)", level: "Avançado" },
+    { name: "Auditorias Avançadas", level: "Especialista" },
+    { name: "Gestão de Performance & KPIs", level: "Especialista" }
+  ];
+
   return (
     <section>
-      <h2>Sobre Mim</h2>
+      <h2>Habilidades</h2>
 
-      <motion.div
-        className="glass"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9 }}
-      >
-        <p>
-          Sou um analista com forte orientação para resultados, decisões baseadas
-          em dados e solução de problemas complexos. Minha trajetória une experiências 
-          práticas na área de tecnologia, análise operacional, automação, auditorias 
-          avançadas e inteligência artificial aplicada ao negócio.
-        </p>
-
-        <p>
-          Trabalho com foco absoluto em precisão, eficiência, clareza analítica 
-          e impacto estratégico — criando soluções que reduzem custos, aumentam 
-          performance e entregam melhorias reais no processo decisório.
-        </p>
-
-        <p>
-          Minha abordagem combina disciplina, visão crítica, inovação e uma profunda 
-          capacidade de estruturar dados, métricas e sistemas que sustentam decisões 
-          de alto nível.
-        </p>
-      </motion.div>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "20px" }}>
+        {skills.map((skill, i) => (
+          <motion.div
+            key={i}
+            className="card"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}
+            whileHover={{ scale: 1.05 }}
+          >
+            <h3 style={{ marginBottom: "10px" }}>{skill.name}</h3>
+            <p style={{ opacity: 0.7 }}>{skill.level}</p>
+          </motion.div>
+        ))}
+      </div>
     </section>
   );
 }
