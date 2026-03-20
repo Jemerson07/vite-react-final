@@ -16,15 +16,34 @@ export default function App() {
 
   return (
     <div className={theme}>
+      {/* Navegação e troca de tema */}
       <Navbar theme={theme} setTheme={setTheme} />
+
+      {/* HERO com vídeo neural */}
       <Hero />
+
+      {/* Sobre Mim (trajetória + perfil analítico) */}
       <About />
+
+      {/* Habilidades (com floating animations) */}
       <Skills />
+
+      {/* Projetos (com imagens neon + KPI 3D) */}
       <Projects />
+
+      {/* Serviços (IA + Inovação Corporativa) */}
       <Services />
+
+      {/* Formação (IA, ADS, AWS, Cisco) */}
       <Education />
+
+      {/* Resultados em números */}
       <Numbers />
+
+      {/* Contato (email + LinkedIn + WhatsApp clicável) */}
       <Contact />
+
+      {/* Rodapé */}
       <Footer />
     </div>
   );
