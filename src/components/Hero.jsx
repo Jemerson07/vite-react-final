@@ -3,10 +3,14 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="hero">
-      {/* Vídeo neural */}
-      /assets/hero.mp4"
+
+      <video
+        autoPlay
+        muted
+        loop
         className="video-bg"
-      ></video>
+        src="/hero.mp4"
+      />
 
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
@@ -25,6 +29,7 @@ export default function Hero() {
       >
         Transformando processos e decisões com inteligência analítica e inovação.
       </motion.p>
+
     </section>
   );
 }
