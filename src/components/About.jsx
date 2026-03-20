@@ -7,20 +7,27 @@ export default function About() {
 
       <motion.div
         className="glass"
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.9 }}
       >
         <p>
-          Sou um profissional de tecnologia especializado em Dados, IA, Automação
-          e soluções digitais. Minha trajetória combina visão analítica,
-          criatividade e execução estratégica — sempre com foco em transformar
-          processos e gerar impacto real.
+          Sou um analista com forte orientação para resultados, decisões baseadas
+          em dados e solução de problemas complexos. Minha trajetória une experiências 
+          práticas na área de tecnologia, análise operacional, automação, auditorias 
+          avançadas e inteligência artificial aplicada ao negócio.
         </p>
 
         <p>
-          Atuo no desenvolvimento de dashboards, agentes inteligentes, automações,
-          auditorias avançadas e sistemas que reduzem custos e elevam a performance.
+          Trabalho com foco absoluto em precisão, eficiência, clareza analítica 
+          e impacto estratégico — criando soluções que reduzem custos, aumentam 
+          performance e entregam melhorias reais no processo decisório.
+        </p>
+
+        <p>
+          Minha abordagem combina disciplina, visão crítica, inovação e uma profunda 
+          capacidade de estruturar dados, métricas e sistemas que sustentam decisões 
+          de alto nível.
         </p>
       </motion.div>
     </section>
