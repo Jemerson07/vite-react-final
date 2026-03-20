@@ -3,14 +3,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="hero">
-
-      <video
-        autoPlay
-        muted
-        loop
-        className="video-bg"
-        src="/hero.mp4"
-      ></video>
+      <video autoPlay muted loop className="video-bg" src="/hero.mp4"></video>
 
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
@@ -29,7 +22,6 @@ export default function Hero() {
       >
         Transformando processos e decisões com inteligência analítica e inovação.
       </motion.p>
-
     </section>
   );
 }
