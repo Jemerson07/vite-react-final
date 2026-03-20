@@ -9,8 +9,8 @@ export default function Hero() {
         muted 
         loop 
         className="video-bg" 
-        src="/hero.mp4"
-      ></video>
+        src="/hero.mp4">
+      </video>
 
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
