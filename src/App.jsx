@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GlobalStyles } from "./styles/GlobalStyles";
 
 import Navbar from "./components/Navbar.jsx";
@@ -23,6 +23,10 @@ import Footer from "./components/Footer.jsx";
 export default function App() {
   const [theme, setTheme] = useState("dark");
 
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   return (
     <div className={theme}>
       <GlobalStyles />
@@ -30,53 +34,55 @@ export default function App() {
       {/* Navegação com troca de tema */}
       <Navbar theme={theme} setTheme={setTheme} />
 
-      {/* HERO com vídeo animado e CTA impactante */}
-      <Hero />
+      <main>
+        {/* HERO com vídeo animado e CTA impactante */}
+        <Hero />
 
-      {/* Storytelling - A Jornada */}
-      <Story />
+        {/* Storytelling - A Jornada */}
+        <Story />
 
-      {/* Sobre Mim - Trajetória e Perfil Analítico */}
-      <About />
+        {/* Sobre Mim - Trajetória e Perfil Analítico */}
+        <About />
 
-      {/* Áreas de Expertise Detalhadas */}
-      <Expertise />
+        {/* Áreas de Expertise Detalhadas */}
+        <Expertise />
 
-      {/* Habilidades - Grid com animações */}
-      <Skills />
+        {/* Habilidades - Grid com animações */}
+        <Skills />
 
-      {/* Projetos de Impacto */}
-      <Projects />
+        {/* Projetos de Impacto */}
+        <Projects />
 
-      {/* Serviços Especializados */}
-      <Services />
+        {/* Serviços Especializados */}
+        <Services />
 
-      {/* Depoimentos de Clientes */}
-      <Testimonials />
+        {/* Depoimentos de Clientes */}
+        <Testimonials />
 
-      {/* Por Que Me Contratar */}
-      <Hiring />
+        {/* Por Que Me Contratar */}
+        <Hiring />
 
-      {/* Metodologia de Trabalho */}
-      <ProcessFlow />
+        {/* Metodologia de Trabalho */}
+        <ProcessFlow />
 
-      {/* Formação & Certificações */}
-      <Education />
+        {/* Formação & Certificações */}
+        <Education />
 
-      {/* Resultados em Números */}
-      <Numbers />
+        {/* Resultados em Números */}
+        <Numbers />
 
-      {/* Call-to-Action com impacto */}
-      <CTA />
+        {/* Call-to-Action com impacto */}
+        <CTA />
 
-      {/* Perguntas Frequentes */}
-      <FAQ />
+        {/* Perguntas Frequentes */}
+        <FAQ />
 
-      {/* Benchmark - Comparativo com Melhores */}
-      <Benchmark />
+        {/* Benchmark - Comparativo com Melhores */}
+        <Benchmark />
 
-      {/* Contato - PJ e Disponibilidade */}
-      <Contact />
+        {/* Contato - PJ e Disponibilidade */}
+        <Contact />
+      </main>
 
       {/* Rodapé */}
       <Footer />

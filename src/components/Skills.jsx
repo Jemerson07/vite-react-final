@@ -1,72 +1,142 @@
-import { motion } from "framer-motion";
+import React from 'react';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.1,
+const SkillsSection = styled.section`
+  padding: 100px 24px;
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 60px;
+`;
+
+const SkillCard = styled(motion.div)`
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(137, 207, 240, 0.03);
+  border: 1px solid rgba(137, 207, 240, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(137, 207, 240, 0.06);
+    border-color: rgba(137, 207, 240, 0.3);
+    transform: translateY(-8px);
+  }
+
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: var(--baby-blue);
+  }
+
+  p {
+    font-size: 1rem;
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 50px;
+    background: rgba(137, 207, 240, 0.1);
+    color: var(--baby-blue);
+    border: 1px solid rgba(137, 207, 240, 0.2);
+  }
+`;
+
+const Skills = () => {
+  const skillsData = [
+    {
+      icon: "🤖",
+      title: "IA & Machine Learning",
+      description: "Desenvolvimento de modelos preditivos, agentes inteligentes e automação cognitiva focada em resultados reais.",
+      tags: ["Python", "TensorFlow", "Scikit-learn", "LLMs"]
     },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-};
-
-export default function Skills() {
-  const skills = [
-    { name: "Inteligência Artificial & Machine Learning", level: "Especialista", icon: "🤖" },
-    { name: "Análise de Dados & Business Intelligence", level: "Especialista", icon: "📊" },
-    { name: "Automação de Processos (RPA)", level: "Avançado", icon: "⚙️" },
-    { name: "Cloud Computing (AWS)", level: "Intermediário", icon: "☁️" },
-    { name: "Cybersecurity Essentials", level: "Intermediário", icon: "🔒" },
-    { name: "Desenvolvimento de Sistemas (ADS)", level: "Avançado", icon: "💻" },
-    { name: "Auditorias Avançadas & Compliance", level: "Especialista", icon: "✅" },
-    { name: "Gestão de Performance & KPIs", level: "Especialista", icon: "📈" },
+    {
+      icon: "📊",
+      title: "BI & Data Analytics",
+      description: "Criação de dashboards estratégicos e análise profunda de dados para suporte à decisão executiva.",
+      tags: ["Power BI", "SQL", "Tableau", "Pandas"]
+    },
+    {
+      icon: "⚙️",
+      title: "Automação RPA",
+      description: "Implementação de robôs para automação de tarefas repetitivas e integração de sistemas complexos.",
+      tags: ["Python", "UiPath", "VBA", "Selenium"]
+    },
+    {
+      icon: "☁️",
+      title: "Cloud Architecture",
+      description: "Design e implementação de infraestrutura escalável em nuvem com foco em performance e segurança.",
+      tags: ["AWS Academy", "Cisco", "Azure", "Docker"]
+    },
+    {
+      icon: "🔒",
+      title: "Cybersecurity",
+      description: "Garantia da integridade de dados e conformidade técnica em ambientes corporativos críticos.",
+      tags: ["Cisco Academy", "Compliance", "Security Essentials"]
+    },
+    {
+      icon: "💼",
+      title: "Gestão Estratégica",
+      description: "Visão crítica de processos, gestão de frotas e auditorias avançadas focadas em redução de custos.",
+      tags: ["Auditoria", "KPIs", "ROI", "Metodologia Ágil"]
+    }
   ];
 
   return (
-    <section id="skills">
+    <SkillsSection id="skills">
       <motion.h2
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        Habilidades & Expertise
+        Especialidades & <br /> Habilidades Técnicas
       </motion.h2>
-
-      <motion.div
-        className="grid-3"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        {skills.map((skill, i) => (
-          <motion.div
-            key={i}
-            className="card"
-            variants={itemVariants}
-            whileHover={{ scale: 1.05, y: -8 }}
+      
+      <Grid>
+        {skillsData.map((skill, index) => (
+          <SkillCard
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 }}
           >
-            <div style={{ fontSize: "2.5rem", marginBottom: "15px" }}>
-              {skill.icon}
+            <span className="icon">{skill.icon}</span>
+            <h3>{skill.title}</h3>
+            <p>{skill.description}</p>
+            <div className="tags">
+              {skill.tags.map((tag, i) => (
+                <span key={i} className="tag">{tag}</span>
+              ))}
             </div>
-            <h3 style={{ marginBottom: "10px", fontSize: "1.1rem" }}>
-              {skill.name}
-            </h3>
-            <span className="badge badge-success">{skill.level}</span>
-          </motion.div>
+          </SkillCard>
         ))}
-      </motion.div>
-    </section>
+      </Grid>
+    </SkillsSection>
   );
-}
+};
+
+export default Skills;

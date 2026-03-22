@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import { useState } from "react";
-import styled from "styled-components";
+import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const NavContainer = styled(motion.nav)`
   position: fixed;
@@ -14,8 +14,8 @@ const NavContainer = styled(motion.nav)`
   padding: 0 48px;
   z-index: 1000;
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: ${props => props.theme === 'dark' ? 'rgba(10, 14, 39, 0.8)' : 'rgba(255, 255, 255, 0.9)'};
+  border-bottom: 1px solid ${props => props.theme === 'dark' ? 'rgba(137, 207, 240, 0.1)' : 'rgba(137, 207, 240, 0.2)'};
+  background: ${props => props.theme === 'dark' ? 'rgba(5, 10, 31, 0.8)' : 'rgba(255, 255, 255, 0.8)'};
   transition: all 0.3s ease;
 
   @media (max-width: 768px) {
@@ -24,10 +24,10 @@ const NavContainer = styled(motion.nav)`
 `;
 
 const Logo = styled.div`
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #0a84ff 0%, #34d399 100%);
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -36,48 +36,61 @@ const Logo = styled.div`
 
 const NavLinks = styled.ul`
   display: flex;
-  gap: 48px;
+  gap: 40px;
   align-items: center;
   list-style: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     display: none;
   }
 `;
 
 const NavLink = styled(motion.li)`
   a {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.95rem;
     cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: ${props => props.theme === 'dark' ? '#a0a8c0' : '#4b5563'};
+    transition: all 0.3s ease;
+    color: ${props => props.theme === 'dark' ? 'rgba(240, 247, 250, 0.7)' : 'rgba(5, 10, 31, 0.7)'};
 
     &:hover {
-      color: #0a84ff;
+      color: var(--baby-blue);
+      transform: translateY(-2px);
     }
   }
 `;
 
 const ThemeToggle = styled(motion.button)`
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.05);
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(137, 207, 240, 0.2);
+  background: rgba(137, 207, 240, 0.05);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
+  color: var(--baby-blue);
 
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(137, 207, 240, 0.15);
+    border-color: var(--baby-blue);
   }
 `;
 
 export default function Navbar({ theme, setTheme }) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -86,21 +99,23 @@ export default function Navbar({ theme, setTheme }) {
   };
 
   const navItems = [
-    { label: "Sobre", id: "story" },
-    { label: "Expertise", id: "expertise" },
+    { label: "Home", id: "home" },
+    { label: "Sobre", id: "about" },
+    { label: "Expertise", id: "skills" },
+    { label: "Educação", id: "education" },
     { label: "Projetos", id: "projects" },
-    { label: "Serviços", id: "services" },
     { label: "Contato", id: "contact" },
   ];
 
   return (
     <NavContainer
       theme={theme}
+      style={{ height: scrolled ? '70px' : '90px' }}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <Logo onClick={() => scrollToSection("hero")}>JS</Logo>
+      <Logo onClick={() => scrollToSection("home")}>JS</Logo>
 
       <NavLinks>
         {navItems.map((item, i) => (
@@ -122,7 +137,7 @@ export default function Navbar({ theme, setTheme }) {
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        title="Alternar tema"
+        title="Alternar Tema"
       >
         {theme === "dark" ? "☀️" : "🌙"}
       </ThemeToggle>
