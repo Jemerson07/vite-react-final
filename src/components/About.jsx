@@ -174,10 +174,10 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <h4>Analista de Dados</h4>
+            <h4>Analista de Frotas & Operações</h4>
             <span className="company">SEINFRA - Secretaria de Infraestrutura da Bahia</span>
             <p className="desc">
-              Atuação estratégica em análise de dados governamentais, estruturação de relatórios e suporte à decisão em infraestrutura estadual.
+              Gestão estratégica de frotas, otimização de rotas, redução de custos operacionais e implementação de sistemas de rastreabilidade inteligente.
             </p>
           </ExperienceItem>
 
@@ -194,18 +194,7 @@ const About = () => {
             </p>
           </ExperienceItem>
 
-          <ExperienceItem
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-          >
-            <h4>Gestão de Frotas e Operações</h4>
-            <span className="company">Logística & Supply Chain</span>
-            <p className="desc">
-              Otimização de fluxos operacionais, controle de custos e implementação de tecnologias de rastreabilidade e performance.
-            </p>
-          </ExperienceItem>
+
         </ExperienceList>
       </Content>
 
