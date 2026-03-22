@@ -1,59 +1,59 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Navbar({ theme, setTheme }) {
+  const [isOpen, setIsOpen] = useState(false);
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
     }
   };
 
+  const navItems = [
+    { label: "Sobre", id: "story" },
+    { label: "Expertise", id: "expertise" },
+    { label: "Projetos", id: "projects" },
+    { label: "Serviços", id: "services" },
+    { label: "Contato", id: "contact" },
+  ];
+
   return (
     <motion.nav
-      className="navbar"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.6 }}
     >
-      <h2 style={{ cursor: "pointer" }} onClick={() => scrollToSection("hero")}>
-        Jemerson Santos
-      </h2>
+      <div className="logo">JS</div>
 
-      <div className="navbar-links">
-        <a onClick={() => scrollToSection("about")} style={{ cursor: "pointer" }}>
-          Sobre
-        </a>
-        <a onClick={() => scrollToSection("skills")} style={{ cursor: "pointer" }}>
-          Habilidades
-        </a>
-        <a onClick={() => scrollToSection("projects")} style={{ cursor: "pointer" }}>
-          Projetos
-        </a>
-        <a onClick={() => scrollToSection("services")} style={{ cursor: "pointer" }}>
-          Serviços
-        </a>
-        <a onClick={() => scrollToSection("contact")} style={{ cursor: "pointer" }}>
-          Contato
-        </a>
-      </div>
+      {/* Desktop Navigation */}
+      <ul className="nav-links">
+        {navItems.map((item, i) => (
+          <motion.li
+            key={i}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: i * 0.1, duration: 0.4 }}
+          >
+            <a onClick={() => scrollToSection(item.id)}>
+              {item.label}
+            </a>
+          </motion.li>
+        ))}
+      </ul>
 
-      <div className="navbar-buttons">
-        <button
-          className="btn-theme"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          title="Alternar tema"
-        >
-          {theme === "dark" ? "☀️" : "🌙"}
-        </button>
-        <a
-          href="https://www.linkedin.com/in/jemerson-santos"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-cta"
-        >
-          LinkedIn
-        </a>
-      </div>
+      {/* Theme Toggle */}
+      <motion.button
+        className="theme-toggle"
+        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        title="Alternar tema"
+      >
+        {theme === "dark" ? "☀️" : "🌙"}
+      </motion.button>
     </motion.nav>
   );
 }
