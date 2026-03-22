@@ -58,17 +58,25 @@ export default function Hero() {
 
   return (
     <section className="hero" id="hero">
-      <video autoPlay muted loop className="video-bg" src="/hero.mp4" />
+      {/* Fundo com gradiente animado (sem vídeo) */}
+      <motion.div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: "linear-gradient(135deg, rgba(10, 14, 39, 1) 0%, rgba(15, 18, 41, 1) 50%, rgba(19, 24, 41, 1) 100%)",
+          zIndex: -1,
+        }}
+      />
 
-      {/* Gradiente animado radial */}
+      {/* Efeito de gradiente animado radial */}
       <motion.div
         style={{
           position: "absolute",
           inset: 0,
           background:
-            "radial-gradient(circle at 50% 50%, rgba(10, 132, 255, 0.12), transparent 70%)",
+            "radial-gradient(circle at 50% 50%, rgba(10, 132, 255, 0.15), transparent 70%)",
           pointerEvents: "none",
-          zIndex: 1,
+          zIndex: 0,
         }}
         animate={{
           opacity: [0.4, 0.8, 0.4],
@@ -80,7 +88,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Partículas */}
+      {/* Partículas flutuantes */}
       {[...Array(12)].map((_, i) => (
         <FloatingParticle
           key={i}
