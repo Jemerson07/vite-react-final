@@ -3,11 +3,17 @@ import { useState } from "react";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
+import Expertise from "./components/Expertise.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Services from "./components/Services.jsx";
+import Testimonials from "./components/Testimonials.jsx";
 import Education from "./components/Education.jsx";
 import Numbers from "./components/Numbers.jsx";
+import Hiring from "./components/Hiring.jsx";
+import ProcessFlow from "./components/ProcessFlow.jsx";
+import CTA from "./components/CTA.jsx";
+import FAQ from "./components/FAQ.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -16,31 +22,49 @@ export default function App() {
 
   return (
     <div className={theme}>
-      {/* Navegação e troca de tema */}
+      {/* Navegação com troca de tema */}
       <Navbar theme={theme} setTheme={setTheme} />
 
-      {/* HERO com vídeo neural */}
+      {/* HERO com vídeo animado e CTA impactante */}
       <Hero />
 
-      {/* Sobre Mim (trajetória + perfil analítico) */}
+      {/* Sobre Mim - Trajetória e Perfil Analítico */}
       <About />
 
-      {/* Habilidades (com floating animations) */}
+      {/* Áreas de Expertise Detalhadas */}
+      <Expertise />
+
+      {/* Habilidades - Grid com animações */}
       <Skills />
 
-      {/* Projetos (com imagens neon + KPI 3D) */}
+      {/* Projetos de Impacto */}
       <Projects />
 
-      {/* Serviços (IA + Inovação Corporativa) */}
+      {/* Serviços Especializados */}
       <Services />
 
-      {/* Formação (IA, ADS, AWS, Cisco) */}
+      {/* Depoimentos de Clientes */}
+      <Testimonials />
+
+      {/* Por Que Me Contratar */}
+      <Hiring />
+
+      {/* Metodologia de Trabalho */}
+      <ProcessFlow />
+
+      {/* Formação & Certificações */}
       <Education />
 
-      {/* Resultados em números */}
+      {/* Resultados em Números */}
       <Numbers />
 
-      {/* Contato (email + LinkedIn + WhatsApp clicável) */}
+      {/* Call-to-Action com impacto */}
+      <CTA />
+
+      {/* Perguntas Frequentes */}
+      <FAQ />
+
+      {/* Contato - PJ e Disponibilidade */}
       <Contact />
 
       {/* Rodapé */}
