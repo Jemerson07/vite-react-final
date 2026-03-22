@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { GlobalStyles } from "./styles/GlobalStyles";
 
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
@@ -24,6 +25,8 @@ export default function App() {
 
   return (
     <div className={theme}>
+      <GlobalStyles />
+      
       {/* Navegação com troca de tema */}
       <Navbar theme={theme} setTheme={setTheme} />
 

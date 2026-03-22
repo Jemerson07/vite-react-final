@@ -1,4 +1,163 @@
 import { motion } from "framer-motion";
+import styled from "styled-components";
+
+const HeroSection = styled.section`
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 80px;
+  overflow: hidden;
+  padding: 64px 24px;
+  background: linear-gradient(135deg, rgba(10, 14, 39, 1) 0%, rgba(15, 18, 41, 1) 50%, rgba(19, 24, 41, 1) 100%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(10, 132, 255, 0.15), transparent 70%);
+    z-index: 0;
+    animation: pulse 5s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+  }
+`;
+
+const HeroContent = styled(motion.div)`
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+  text-align: center;
+`;
+
+const Badge = styled(motion.div)`
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: rgba(52, 211, 153, 0.15);
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #34d399;
+  backdrop-filter: blur(10px);
+  letter-spacing: 0.5px;
+`;
+
+const HeroTitle = styled(motion.h1)`
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 24px;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: #ffffff;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+`;
+
+const HeroSubtitle = styled(motion.p)`
+  font-size: 1.3rem;
+  margin-bottom: 32px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  color: #a0a8c0;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+`;
+
+const HeroButtons = styled(motion.div)`
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const Button = styled.button`
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: -0.01em;
+
+  ${props => props.primary ? `
+    background: linear-gradient(135deg, #0a84ff 0%, #34d399 100%);
+    color: white;
+    box-shadow: 0 20px 40px rgba(10, 132, 255, 0.3);
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 30px 60px rgba(10, 132, 255, 0.4);
+    }
+  ` : `
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+  `}
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const HeroStats = styled(motion.div)`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+`;
+
+const StatItem = styled.div`
+  padding: 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #0a84ff 0%, #34d399 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: #a0a8c0;
+  }
+`;
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -28,146 +187,60 @@ export default function Hero() {
     }
   };
 
-  // Partículas flutuantes
-  const FloatingParticle = ({ delay, left, top }) => (
-    <motion.div
-      style={{
-        position: "absolute",
-        width: "6px",
-        height: "6px",
-        borderRadius: "50%",
-        background: "rgba(10, 132, 255, 0.6)",
-        left: `${left}%`,
-        top: `${top}%`,
-        zIndex: 0,
-        boxShadow: "0 0 20px rgba(10, 132, 255, 0.8)",
-      }}
-      animate={{
-        y: [0, -150, 0],
-        x: [0, Math.random() * 100 - 50, 0],
-        opacity: [0, 1, 0],
-      }}
-      transition={{
-        duration: 4 + Math.random() * 2,
-        repeat: Infinity,
-        delay,
-        ease: "easeInOut",
-      }}
-    />
-  );
-
   return (
-    <section className="hero" id="hero">
-      {/* Fundo com gradiente animado (sem vídeo) */}
-      <motion.div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: "linear-gradient(135deg, rgba(10, 14, 39, 1) 0%, rgba(15, 18, 41, 1) 50%, rgba(19, 24, 41, 1) 100%)",
-          zIndex: -1,
-        }}
-      />
-
-      {/* Efeito de gradiente animado radial */}
-      <motion.div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background:
-            "radial-gradient(circle at 50% 50%, rgba(10, 132, 255, 0.15), transparent 70%)",
-          pointerEvents: "none",
-          zIndex: 0,
-        }}
-        animate={{
-          opacity: [0.4, 0.8, 0.4],
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-
-      {/* Partículas flutuantes */}
-      {[...Array(12)].map((_, i) => (
-        <FloatingParticle
-          key={i}
-          delay={i * 0.25}
-          left={Math.random() * 100}
-          top={Math.random() * 100}
-        />
-      ))}
-
-      <motion.div
-        className="hero-content"
+    <HeroSection id="hero">
+      <HeroContent
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        {/* Badge de disponibilidade */}
-        <motion.div
-          variants={itemVariants}
-          style={{
-            display: "inline-block",
-            marginBottom: "20px",
-            padding: "12px 24px",
-            borderRadius: "50px",
-            background: "rgba(52, 211, 153, 0.15)",
-            border: "1px solid rgba(52, 211, 153, 0.4)",
-            fontSize: "0.9rem",
-            fontWeight: 600,
-            color: "#34d399",
-            backdropFilter: "blur(10px)",
-            letterSpacing: "0.5px",
-          }}
-        >
+        <Badge variants={itemVariants}>
           ✨ Disponível para Grandes Projetos
-        </motion.div>
+        </Badge>
 
-        <motion.h1 variants={itemVariants}>
+        <HeroTitle variants={itemVariants}>
           Estrategista em IA, Dados & Automação
-        </motion.h1>
+        </HeroTitle>
 
-        <motion.p variants={itemVariants}>
+        <HeroSubtitle variants={itemVariants}>
           Transformo processos complexos em soluções inteligentes. Especializado
           em IA, Business Intelligence e Automação para empresas que buscam
           crescimento exponencial.
-        </motion.p>
+        </HeroSubtitle>
 
-        <motion.div className="hero-buttons" variants={itemVariants}>
-          <button
-            className="btn-primary"
+        <HeroButtons variants={itemVariants}>
+          <Button
+            primary
             onClick={() => scrollToSection("contact")}
           >
             💬 Iniciar Projeto
-          </button>
-          <button
-            className="btn-secondary"
+          </Button>
+          <Button
             onClick={() => scrollToSection("story")}
           >
             Conhecer Trajetória
-          </button>
-        </motion.div>
+          </Button>
+        </HeroButtons>
 
-        <motion.div className="hero-stats" variants={itemVariants}>
-          <div className="stat-item">
+        <HeroStats variants={itemVariants}>
+          <StatItem>
             <h3>R$ 400K+</h3>
             <p>Recuperados em Auditorias</p>
-          </div>
-          <div className="stat-item">
+          </StatItem>
+          <StatItem>
             <h3>50+</h3>
             <p>Automações Criadas</p>
-          </div>
-          <div className="stat-item">
+          </StatItem>
+          <StatItem>
             <h3>30+</h3>
             <p>Dashboards Estratégicos</p>
-          </div>
-          <div className="stat-item">
+          </StatItem>
+          <StatItem>
             <h3>10+</h3>
             <p>Anos de Experiência</p>
-          </div>
-        </motion.div>
-      </motion.div>
-    </section>
+          </StatItem>
+        </HeroStats>
+      </HeroContent>
+    </HeroSection>
   );
 }
