@@ -18,8 +18,18 @@ const NavContainer = styled(motion.nav)`
   background: ${props => props.theme === 'dark' ? 'rgba(5, 10, 31, 0.8)' : 'rgba(255, 255, 255, 0.8)'};
   transition: all 0.3s ease;
 
+  @media (max-width: 1024px) {
+    padding: 0 32px;
+  }
+
   @media (max-width: 768px) {
-    padding: 0 24px;
+    padding: 0 16px;
+    height: 70px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 12px;
+    height: 60px;
   }
 `;
 
@@ -32,6 +42,15 @@ const Logo = styled.div`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   cursor: pointer;
+  white-space: nowrap;
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const NavLinks = styled.ul`
@@ -73,10 +92,18 @@ const ThemeToggle = styled(motion.button)`
   font-size: 1.2rem;
   transition: all 0.3s ease;
   color: var(--baby-blue);
+  min-width: 44px;
+  min-height: 44px;
 
   &:hover {
     background: rgba(137, 207, 240, 0.15);
     border-color: var(--baby-blue);
+  }
+
+  @media (max-width: 480px) {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
 `;
 

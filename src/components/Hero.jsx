@@ -11,6 +11,21 @@ const HeroSection = styled.section`
   text-align: center;
   background: radial-gradient(circle at center, rgba(137, 207, 240, 0.15) 0%, transparent 70%);
   padding-top: 120px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media (max-width: 768px) {
+    padding-top: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 80px;
+    padding-left: 12px;
+    padding-right: 12px;
+    min-height: auto;
+  }
 `;
 
 const Badge = styled(motion.div)`
@@ -26,6 +41,12 @@ const Badge = styled(motion.div)`
   align-items: center;
   gap: 10px;
   backdrop-filter: blur(10px);
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+    margin-bottom: 24px;
+  }
 `;
 
 const Title = styled(motion.h1)`
@@ -39,8 +60,17 @@ const Title = styled(motion.h1)`
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
+  @media (max-width: 1024px) {
+    font-size: 4.5rem;
+  }
+
   @media (max-width: 768px) {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+    margin-bottom: 16px;
   }
 `;
 
@@ -51,9 +81,17 @@ const Subtitle = styled(motion.p)`
   line-height: 1.6;
   opacity: 0.9;
   font-weight: 500;
+  padding: 0 16px;
 
   @media (max-width: 768px) {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+    padding: 0 12px;
   }
 `;
 
@@ -62,10 +100,17 @@ const ButtonGroup = styled(motion.div)`
   gap: 20px;
   margin-bottom: 80px;
   
+  @media (max-width: 768px) {
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+
   @media (max-width: 480px) {
     flex-direction: column;
     width: 100%;
-    padding: 0 20px;
+    gap: 12px;
+    margin-bottom: 40px;
+    padding: 0;
   }
 `;
 
@@ -77,11 +122,23 @@ const PrimaryButton = styled.a`
   font-weight: 700;
   font-size: 1.1rem;
   box-shadow: 0 10px 25px rgba(0, 71, 171, 0.25);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
   
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(0, 71, 171, 0.35);
+  }
+
+  @media (max-width: 480px) {
+    padding: 16px 24px;
+    font-size: 1rem;
+    width: 100%;
   }
 `;
 
@@ -93,11 +150,23 @@ const SecondaryButton = styled.a`
   font-weight: 700;
   font-size: 1.1rem;
   border: 1px solid var(--baby-blue);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
   
   &:hover {
     background: rgba(137, 207, 240, 0.08);
     transform: translateY(-3px);
+  }
+
+  @media (max-width: 480px) {
+    padding: 16px 24px;
+    font-size: 1rem;
+    width: 100%;
   }
 `;
 
@@ -108,13 +177,23 @@ const StatsContainer = styled(motion.div)`
   width: 100%;
   max-width: 1100px;
   margin-top: 40px;
+  padding: 0 16px;
 
   @media (max-width: 992px) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 20px;
+    padding: 0 12px;
   }
 
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0;
+    margin-top: 32px;
   }
 `;
 
@@ -148,6 +227,27 @@ const StatItem = styled.div`
     letter-spacing: 0.12em;
     font-weight: 600;
     opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    padding: 24px;
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px;
+    h3 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+    }
   }
 `;
 
