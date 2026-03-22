@@ -211,7 +211,7 @@ const Hero = () => {
           <p>Dashboards Estratégicos</p>
         </StatItem>
         <StatItem>
-          <h3>10+</h3>
+          <h3>6+</h3>
           <p>Anos de Experiência</p>
         </StatItem>
       </StatsContainer>

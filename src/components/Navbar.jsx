@@ -115,7 +115,7 @@ export default function Navbar({ theme, setTheme }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <Logo onClick={() => scrollToSection("home")}>JS</Logo>
+      <Logo onClick={() => scrollToSection("home")}>Jemerson</Logo>
 
       <NavLinks>
         {navItems.map((item, i) => (

@@ -55,12 +55,20 @@ export default function Story() {
       color: "#fb923c",
     },
     {
-      year: "2024-Presente",
+      year: "2024-2025",
       title: "Visão: Impacto Exponencial com IA",
       description:
-        "Hoje, combino expertise técnica com visão estratégica. Meu foco é ajudar empresas a alcançar crescimento exponencial através de IA, automação inteligente e decisões baseadas em dados. Cada projeto é uma oportunidade de gerar impacto real.",
+        "Combino expertise técnica com visão estratégica. Meu foco é ajudar empresas a alcançar crescimento exponencial através de IA, automação inteligente e decisões baseadas em dados. Cada projeto é uma oportunidade de gerar impacto real.",
       icon: "🚀",
       color: "#ec4899",
+    },
+    {
+      year: "2026 em Diante",
+      title: "Futuro: Liderança em Transformação Digital",
+      description:
+        "Expandindo atuação como estrategista de IA e transformação digital. Focado em parcerias com grandes empresas, implementação de soluções escaláveis e mentoria de talentos. Visão: ser referência em inovação e impacto estratégico no Brasil.",
+      icon: "🌟",
+      color: "#06b6d4",
     },
   ];
 
