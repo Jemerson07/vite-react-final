@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
+import Story from "./components/Story.jsx";
 import About from "./components/About.jsx";
 import Expertise from "./components/Expertise.jsx";
 import Skills from "./components/Skills.jsx";
@@ -14,6 +15,7 @@ import Hiring from "./components/Hiring.jsx";
 import ProcessFlow from "./components/ProcessFlow.jsx";
 import CTA from "./components/CTA.jsx";
 import FAQ from "./components/FAQ.jsx";
+import Benchmark from "./components/Benchmark.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -27,6 +29,9 @@ export default function App() {
 
       {/* HERO com vídeo animado e CTA impactante */}
       <Hero />
+
+      {/* Storytelling - A Jornada */}
+      <Story />
 
       {/* Sobre Mim - Trajetória e Perfil Analítico */}
       <About />
@@ -63,6 +68,9 @@ export default function App() {
 
       {/* Perguntas Frequentes */}
       <FAQ />
+
+      {/* Benchmark - Comparativo com Melhores */}
+      <Benchmark />
 
       {/* Contato - PJ e Disponibilidade */}
       <Contact />
