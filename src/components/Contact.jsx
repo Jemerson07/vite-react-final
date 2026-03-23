@@ -148,7 +148,7 @@ const Contact = () => {
           </ContactCard>
 
           <ContactCard 
-            href="mailto:jemersonsantos.ti@gmail.com" 
+            href="mailto:jemerson456l@gmail.com" 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -156,7 +156,7 @@ const Contact = () => {
           >
             <span className="icon">✉️</span>
             <h4>E-mail</h4>
-            <p>jemersonsantos.ti@gmail.com</p>
+            <p>jemerson456l@gmail.com</p>
             <span className="action-text">Enviar Proposta</span>
           </ContactCard>
         </ContactGrid>

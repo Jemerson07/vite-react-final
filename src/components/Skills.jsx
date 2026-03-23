@@ -20,6 +20,8 @@ const SkillCard = styled(motion.div)`
   border: 1px solid rgba(137, 207, 240, 0.1);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 
   &:hover {
     background: rgba(137, 207, 240, 0.06);
@@ -69,39 +71,39 @@ const Skills = () => {
   const skillsData = [
     {
       icon: "🤖",
-      title: "IA & Machine Learning",
-      description: "Desenvolvimento de modelos preditivos, agentes inteligentes e automação cognitiva focada em resultados reais.",
-      tags: ["Python", "TensorFlow", "Scikit-learn", "LLMs"]
+      title: "IA & Automação Real",
+      description: "Implementação estratégica de IA e automação cognitiva focada em resultados práticos e redução de erros operacionais.",
+      tags: ["Python", "IA Estruturada", "Automação em Tempo Real"]
     },
     {
       icon: "📊",
       title: "BI & Data Analytics",
-      description: "Criação de dashboards estratégicos e análise profunda de dados para suporte à decisão executiva.",
-      tags: ["Power BI", "SQL", "Tableau", "Pandas"]
+      description: "Transformação de dados operacionais em indicadores estratégicos (KPIs) para suporte à decisão executiva.",
+      tags: ["Power BI", "SQL", "Pandas", "DDS"]
     },
     {
       icon: "⚙️",
-      title: "Automação RPA",
-      description: "Implementação de robôs para automação de tarefas repetitivas e integração de sistemas complexos.",
-      tags: ["Python", "UiPath", "VBA", "Selenium"]
+      title: "Eficiência Operacional",
+      description: "Otimização de processos complexos, gestão de frotas e identificação de gargalos produtivos.",
+      tags: ["Gestão de Frotas", "KPIs", "ROI", "Auditoria"]
+    },
+    {
+      icon: "🎤",
+      title: "Apresentação & Interação",
+      description: "Técnicas avançadas de apresentação técnica (DDS) e demonstração prática de soluções para diversos públicos.",
+      tags: ["Comunicação Técnica", "DDS", "Execução Prática"]
     },
     {
       icon: "☁️",
-      title: "Cloud Architecture",
-      description: "Design e implementação de infraestrutura escalável em nuvem com foco em performance e segurança.",
-      tags: ["AWS Academy", "Cisco", "Azure", "Docker"]
+      title: "Cloud & Networking",
+      description: "Conhecimento sólido em infraestrutura de nuvem e redes através de certificações de elite.",
+      tags: ["AWS Academy", "Cisco Academy", "Networking"]
     },
     {
       icon: "🔒",
-      title: "Cybersecurity",
+      title: "Segurança & Compliance",
       description: "Garantia da integridade de dados e conformidade técnica em ambientes corporativos críticos.",
-      tags: ["Cisco Academy", "Compliance", "Security Essentials"]
-    },
-    {
-      icon: "💼",
-      title: "Gestão Estratégica",
-      description: "Visão crítica de processos, gestão de frotas e auditorias avançadas focadas em redução de custos.",
-      tags: ["Auditoria", "KPIs", "ROI", "Metodologia Ágil"]
+      tags: ["Cisco Security", "Compliance", "Auditoria Técnica"]
     }
   ];
 

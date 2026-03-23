@@ -45,8 +45,8 @@ const itemVariants = {
 
 export default function Numbers() {
   const stats = [
-    { value: 400, label: "K+ Recuperados em Auditorias", symbol: "R$", color: "#34d399" },
-    { value: 5000, label: "Condutores Gerenciados", symbol: "", color: "#0a84ff" },
+    { value: 6, label: "Anos de Experiência", symbol: "+", color: "#34d399" },
+    { value: 100, label: "Processos Otimizados", symbol: "%", color: "#0a84ff" },
     { value: 50, label: "Automações Criadas", symbol: "+", color: "#fb923c" },
     { value: 30, label: "Dashboards Estratégicos", symbol: "+", color: "#8b5cf6" },
   ];

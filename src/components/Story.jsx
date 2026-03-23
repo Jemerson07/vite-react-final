@@ -23,50 +23,42 @@ const itemVariants = {
 export default function Story() {
   const chapters = [
     {
-      year: "2014-2018",
-      title: "O Começo: Descobrindo a Tecnologia",
+      year: "2018-2020",
+      title: "O Início: Análise Operacional & Processos",
       description:
-        "Iniciei minha carreira com curiosidade genuína sobre como a tecnologia poderia resolver problemas reais. Comecei a estudar programação e análise de dados, percebendo que o verdadeiro valor estava em transformar dados em decisões.",
+        "Iniciei minha trajetória focando em entender como as operações de negócio funcionam. Identifiquei os primeiros gargalos e comecei a aplicar lógica de sistemas para otimizar fluxos manuais.",
       icon: "🌱",
       color: "#8b5cf6",
     },
     {
-      year: "2018-2020",
-      title: "Aprendizado Prático: Operações & Automação",
+      year: "2020-2022",
+      title: "Evolução: Dados & Gestão Estratégica",
       description:
-        "Trabalhei em operações complexas onde identifiquei processos repetitivos que desperdiçavam tempo e recursos. Comecei a automatizar tarefas, reduzindo custos em até 40% e aumentando a eficiência operacional.",
+        "Atuei na SEINFRA com foco em Gestão de Frotas e Operações. Foi onde consolidei minha capacidade de transformar dados operacionais em indicadores de performance (KPIs) e dashboards de suporte à decisão.",
       icon: "⚙️",
       color: "#0a84ff",
     },
     {
-      year: "2020-2022",
-      title: "Especialização: IA & Análise Estratégica",
+      year: "2022-2024",
+      title: "Especialização: Automação & IA Aplicada",
       description:
-        "Aprofundei meus conhecimentos em Machine Learning e Business Intelligence. Desenvolvi dashboards estratégicos que transformaram dados brutos em insights acionáveis para executivos. Cada projeto gerava impacto mensurável.",
+        "Aprofundei em Python e ferramentas de IA para criar automações reais. Desenvolvi soluções que reduziram erros e ganharam escala, unindo o conhecimento acadêmico (ADS, AWS e Cisco) com a prática de mercado.",
       icon: "🤖",
       color: "#34d399",
     },
     {
-      year: "2022-2024",
-      title: "Maestria: Consultoria & Transformação Digital",
-      description:
-        "Evoluí para consultoria estratégica, ajudando empresas a transformar seus processos digitalmente. Recuperei R$ 400K+ em auditorias, implementei 50+ automações e criei 30+ dashboards estratégicos. Cada cliente, um novo desafio.",
-      icon: "🏆",
-      color: "#fb923c",
-    },
-    {
       year: "2024-2025",
-      title: "Visão: Impacto Exponencial com IA",
+      title: "Impacto: Execução Técnica & Apresentação",
       description:
-        "Combino expertise técnica com visão estratégica. Meu foco é ajudar empresas a alcançar crescimento exponencial através de IA, automação inteligente e decisões baseadas em dados. Cada projeto é uma oportunidade de gerar impacto real.",
+        "Atualmente na LM Mobilidade, foco em aplicar IA de forma estratégica. Realizo demonstrações técnicas (DDS) mostrando na prática como a tecnologia resolve problemas de eficiência e custo em tempo real.",
       icon: "🚀",
       color: "#ec4899",
     },
     {
       year: "2026 em Diante",
-      title: "Futuro: Liderança em Transformação Digital",
+      title: "Visão: Liderança em Inovação Digital",
       description:
-        "Expandindo atuação como estrategista de IA e transformação digital. Focado em parcerias com grandes empresas, implementação de soluções escaláveis e mentoria de talentos. Visão: ser referência em inovação e impacto estratégico no Brasil.",
+        "Focado em expandir o impacto da IA nas operações brasileiras. Minha visão é liderar projetos de transformação digital que unam inteligência analítica com resultados financeiros exponenciais.",
       icon: "🌟",
       color: "#06b6d4",
     },
@@ -80,7 +72,7 @@ export default function Story() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        A Jornada: De Curiosidade a Maestria
+        A Jornada: 6 Anos de Evolução e Impacto
       </motion.h2>
 
       <motion.p
@@ -98,9 +90,9 @@ export default function Story() {
         transition={{ delay: 0.2, duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Minha trajetória não é apenas sobre acumular experiências. É sobre
-        evolução constante, aprendizado profundo e geração de impacto real em
-        cada projeto que abraço.
+        Minha trajetória é marcada pela transição da operação para a inteligência. 
+        Ao longo de 6 anos, refinei minha capacidade de identificar ineficiências e 
+        construir soluções tecnológicas que geram valor real e imediato.
       </motion.p>
 
       <motion.div
@@ -216,34 +208,6 @@ export default function Story() {
             )}
           </motion.div>
         ))}
-      </motion.div>
-
-      {/* Filosofia */}
-      <motion.div
-        style={{
-          marginTop: "80px",
-          padding: "40px",
-          borderRadius: "16px",
-          background: "linear-gradient(135deg, rgba(10, 132, 255, 0.1), rgba(90, 200, 255, 0.05))",
-          textAlign: "center",
-          maxWidth: "800px",
-          margin: "80px auto 0",
-        }}
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <h3 style={{ marginBottom: "20px", fontSize: "1.5rem" }}>
-          💡 Minha Filosofia
-        </h3>
-        <p style={{ fontSize: "1rem", lineHeight: "1.8", opacity: 0.9 }}>
-          <strong>Não acredito em soluções genéricas.</strong> Cada negócio é
-          único, cada desafio é diferente. Meu compromisso é entender
-          profundamente seu contexto, sua visão e seus objetivos para criar
-          soluções que não apenas resolvem problemas, mas geram crescimento
-          exponencial e impacto duradouro.
-        </p>
       </motion.div>
     </section>
   );

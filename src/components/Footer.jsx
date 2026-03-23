@@ -25,10 +25,10 @@ export default function Footer() {
     {
       title: "Conecte-se",
       links: [
-        { label: "LinkedIn", href: "https://www.linkedin.com/in/jemerson-santos", external: true },
+        { label: "LinkedIn", href: "https://www.linkedin.com/in/jemersonsj", external: true },
         { label: "GitHub", href: "https://github.com/Jemerson07", external: true },
         { label: "Email", href: "mailto:jemerson456l@gmail.com" },
-        { label: "WhatsApp", href: "https://wa.me/5581985332616", external: true },
+        { label: "WhatsApp", href: "https://wa.me/5571991595758", external: true },
       ],
     },
   ];

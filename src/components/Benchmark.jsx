@@ -246,8 +246,7 @@ export default function Benchmark() {
               2️⃣ Impacto Quantificado
             </p>
             <p style={{ fontSize: "0.9rem", opacity: 0.8, lineHeight: "1.6" }}>
-              Não "fiz automação". "Recuperei R$ 400K e aumentei eficiência em
-              82%". Números que falam.
+              Não apenas "fiz automação". Mostro resultados reais: redução de erros operacionais e ganho de eficiência mensurável em tempo real.
             </p>
           </div>
 

@@ -64,6 +64,13 @@ export default function Expertise() {
       technologies: ["AWS", "Azure", "GCP", "Docker"],
       icon: "☁️",
     },
+    {
+      title: "Apresentação & Interação Técnica",
+      description:
+        "Capacidade de comunicar conceitos complexos de IA e automação para diversos públicos, demonstrando resultados práticos em tempo real.",
+      technologies: ["DDS", "Comunicação", "Liderança Técnica", "Apresentação"],
+      icon: "🎤",
+    },
   ];
 
   return (

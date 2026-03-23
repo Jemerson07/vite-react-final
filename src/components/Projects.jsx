@@ -23,36 +23,37 @@ const itemVariants = {
 export default function Projects() {
   const projects = [
     {
-      title: "Recuperação de R$ 400.000",
-      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+      title: "Automação de IA em Tempo Real",
+      img: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
       desc:
-        "Auditoria avançada em contrato público com 987 veículos, automação de cálculos e relatórios técnicos.",
-      impact: "R$ 400K recuperados",
-      tag: "Auditoria",
+        "Desenvolvimento e execução de uma IA estruturada para otimização de processos, apresentada em DDS na LM Mobilidade.",
+      impact: "Eficiência Imediata",
+      tag: "IA & Automação",
+      link: "https://www.linkedin.com/posts/jemerson-santos_inteligenciaartificial-automacao-transformacaodigital-ugcPost-7441901618083766272-24s9"
     },
     {
-      title: "Operação Nacional — 5.000 condutores",
-      img: "https://images.unsplash.com/photo-1535223289827-42f1e9919769",
+      title: "Gestão Estratégica de Frotas",
+      img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
       desc:
-        "Elevação do controle de 0,7% para 82% com rastreabilidade, padronização e automações via CRM.",
-      impact: "82% de eficiência",
+        "Otimização de fluxos operacionais e implementação de sistemas de rastreabilidade para frotas de grande escala.",
+      impact: "Redução de Custos",
       tag: "Operações",
     },
     {
-      title: "Agentes Inteligentes com IA",
-      img: "https://images.unsplash.com/photo-1634382812645-fd2272c38ab5",
+      title: "Dashboards de Business Intelligence",
+      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
       desc:
-        "Criação de agentes com IA para leitura, classificação, auditoria e suporte operacional automatizado.",
-      impact: "50+ automações",
-      tag: "IA",
+        "Criação de painéis estratégicos em Power BI para suporte à decisão executiva e monitoramento de KPIs.",
+      impact: "Decisões Data-Driven",
+      tag: "BI",
     },
     {
-      title: "Dashboards Estratégicos",
-      img: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+      title: "Automação de Processos com Python",
+      img: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
       desc:
-        "Painéis completos em BI para telemetria, manutenção, indicadores e decisão executiva em tempo real.",
-      impact: "30+ dashboards",
-      tag: "BI",
+        "Desenvolvimento de scripts e robôs para automação de tarefas repetitivas e integração de sistemas.",
+      impact: "50+ Automações",
+      tag: "Python",
     },
   ];
 
@@ -64,7 +65,7 @@ export default function Projects() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Projetos de Impacto
+        Projetos & Execução
       </motion.h2>
 
       <motion.div
@@ -97,7 +98,17 @@ export default function Projects() {
               <span className="badge badge-success">{p.impact}</span>
             </div>
             <h3 style={{ marginBottom: "12px" }}>{p.title}</h3>
-            <p style={{ opacity: 0.8, lineHeight: "1.6" }}>{p.desc}</p>
+            <p style={{ opacity: 0.8, lineHeight: "1.6", marginBottom: "20px" }}>{p.desc}</p>
+            {p.link && (
+              <a 
+                href={p.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ fontSize: "0.9rem", color: "var(--baby-blue)", fontWeight: 700, textDecoration: "none" }}
+              >
+                Ver Detalhes do Projeto ↗
+              </a>
+            )}
           </motion.div>
         ))}
       </motion.div>

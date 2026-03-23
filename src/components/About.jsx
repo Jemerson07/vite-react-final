@@ -148,22 +148,22 @@ const About = () => {
           <h3>Estrategista em <br /> Soluções de Impacto</h3>
           <p>
             Sou um **Analista de Sistemas e Processos** com forte orientação para resultados e decisões baseadas em dados. 
-            Minha trajetória une experiência prática em **IA, Automação com Python e Business Intelligence** 
-            aplicados diretamente ao crescimento e eficiência corporativa em Salvador, BA.
+            Minha trajetória de **6 anos** une experiência prática em **IA, Automação com Python e Business Intelligence** 
+            aplicados diretamente ao crescimento e eficiência corporativa.
           </p>
           <p>
-            Com foco absoluto em precisão e impacto estratégico, desenvolvo soluções que não apenas resolvem problemas, 
-            mas que entregam melhorias reais no processo decisório e redução drástica de custos operacionais.
+            Hoje, na **LM Mobilidade**, atuo na vanguarda da implementação de IA, transformando discursos em execução estratégica. 
+            Desenvolvo automações que otimizam processos, reduzem erros operacionais e permitem decisões mais rápidas e precisas.
           </p>
           <p>
             Minha abordagem combina **disciplina técnica** (ADS, AWS e Cisco Academy) com uma visão crítica de negócios, 
-            permitindo-me estruturar dados e sistemas que sustentam decisões de alto nível.
+            permitindo-me estruturar dados e sistemas que sustentam decisões de alto nível e geram impacto real no ROI.
           </p>
           <div className="badges">
-            <span className="badge">IA & Machine Learning</span>
+            <span className="badge">IA & Automação</span>
             <span className="badge">Business Intelligence</span>
-            <span className="badge">Automação RPA</span>
-            <span className="badge">Consultoria Estratégica</span>
+            <span className="badge">Python & Dados</span>
+            <span className="badge">Gestão de Frotas</span>
           </div>
         </TextBlock>
 
@@ -174,10 +174,10 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <h4>Analista de Frotas & Operações</h4>
-            <span className="company">SEINFRA - Secretaria de Infraestrutura da Bahia</span>
+            <h4>Analista de Sistemas e Processos</h4>
+            <span className="company">LM Mobilidade</span>
             <p className="desc">
-              Gestão estratégica de frotas, otimização de rotas, redução de custos operacionais e implementação de sistemas de rastreabilidade inteligente.
+              Foco em Inteligência Artificial e Automação. Implementação de soluções de IA em tempo real para otimização de performance e redução de custos operacionais.
             </p>
           </ExperienceItem>
 
@@ -187,14 +187,25 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <h4>Analista de Sistemas e Processos</h4>
-            <span className="company">Consultoria & Projetos de Inovação</span>
+            <h4>Analista de Frotas & Operações</h4>
+            <span className="company">SEINFRA - Secretaria de Infraestrutura da Bahia</span>
             <p className="desc">
-              Liderança técnica em projetos de automação de processos (RPA), implementação de dashboards de BI e integração de sistemas inteligentes.
+              Gestão estratégica de frotas e otimização de rotas. Implementação de indicadores de performance e sistemas de controle operacional.
             </p>
           </ExperienceItem>
 
-
+          <ExperienceItem
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+          >
+            <h4>Consultoria em Dados & Automação</h4>
+            <span className="company">Projetos Estratégicos</span>
+            <p className="desc">
+              Desenvolvimento de dashboards em Power BI e scripts de automação em Python para diversos segmentos, focando em eficiência e clareza analítica.
+            </p>
+          </ExperienceItem>
         </ExperienceList>
       </Content>
 
@@ -204,19 +215,19 @@ const About = () => {
         viewport={{ once: true }}
       >
         <h3>💼 Disponibilidade & Modelos de Trabalho</h3>
-        <p>Trabalho com <strong>Modelo PJ</strong>, <strong>Projetos Estratégicos</strong> e <strong>Demanda Pontual</strong>. Flexibilidade total para se adequar às suas necessidades.</p>
+        <p>Trabalho com <strong>Modelo PJ</strong>, <strong>Projetos Estratégicos</strong> e <strong>Consultoria de IA</strong>. Foco total em gerar resultado real para sua operação.</p>
         <div className="grid">
           <div className="item">
             <h5>⚡ Resposta</h5>
-            <p>Até 24 horas</p>
+            <p>Imediata</p>
           </div>
           <div className="item">
             <h5>🎯 Foco</h5>
-            <p>Impacto & ROI</p>
+            <p>Execução & ROI</p>
           </div>
           <div className="item">
             <h5>📊 Metodologia</h5>
-            <p>Ágil & Iterativa</p>
+            <p>Data-Driven</p>
           </div>
         </div>
       </AvailabilityCard>
