@@ -26,15 +26,15 @@ export default function Story() {
       year: "2018-2020",
       title: "O Início: Análise Operacional & Processos",
       description:
-        "Iniciei minha trajetória focando em entender como as operações de negócio funcionam. Identifiquei os primeiros gargalos e comecei a aplicar lógica de sistemas para otimizar fluxos manuais.",
+        "Iniciei minha trajetória focando em entender como as operações de negócio funcionam. Identifiquei os primeiros gargalos e comecei a aplicar lógica de sistemas para otimizar fluxos manuais com empresas de pequeno porte.",
       icon: "🌱",
       color: "#8b5cf6",
     },
     {
       year: "2020-2022",
-      title: "Evolução: Dados & Gestão Estratégica",
+      title: "Evolução: TI",
       description:
-        "Atuei na SEINFRA com foco em Gestão de Frotas e Operações. Foi onde consolidei minha capacidade de transformar dados operacionais em indicadores de performance (KPIs) e dashboards de suporte à decisão.",
+        "Servi às Forças Armadas, adquirindo experiência prática em infraestrutura de redes, suporte técnico e na criação de materiais didáticos de TI, fortalecendo minha base analítica e minha habilidade de traduzir tecnologia em conhecimento acessível.",
       icon: "⚙️",
       color: "#0a84ff",
     },
