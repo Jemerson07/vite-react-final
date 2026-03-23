@@ -147,16 +147,16 @@ const About = () => {
         >
           <h3>Estrategista em <br /> Soluções de Impacto</h3>
           <p>
-            Sou um **Analista de Sistemas e Processos** com forte orientação para resultados e decisões baseadas em dados. 
-            Minha trajetória de **6 anos** une experiência prática em **IA, Automação com Python e Business Intelligence** 
+            Sou um Analista de Sistemas, Operações e Processos com forte orientação para resultados e decisões baseadas em dados. 
+            Minha trajetória de 6 anos une experiência prática em IA, Gestão de Contratos, Automação com Python e Business Intelligence
             aplicados diretamente ao crescimento e eficiência corporativa.
           </p>
           <p>
-            Hoje, na **LM Mobilidade**, atuo na vanguarda da implementação de IA, transformando discursos em execução estratégica. 
+            Hoje, na LM Mobilidade, atuo na vanguarda da implementação de IA, transformando discursos em execução estratégica. 
             Desenvolvo automações que otimizam processos, reduzem erros operacionais e permitem decisões mais rápidas e precisas.
           </p>
           <p>
-            Minha abordagem combina **disciplina técnica** (ADS, AWS e Cisco Academy) com uma visão crítica de negócios, 
+            Minha abordagem combina disciplina técnica (ADS, AWS e Cisco Academy) com uma visão crítica de negócios, 
             permitindo-me estruturar dados e sistemas que sustentam decisões de alto nível e geram impacto real no ROI.
           </p>
           <div className="badges">
@@ -188,9 +188,9 @@ const About = () => {
             transition={{ delay: 0.2 }}
           >
             <h4>Analista de Frotas & Operações</h4>
-            <span className="company">SEINFRA - Secretaria de Infraestrutura da Bahia</span>
+            <span className="company">LM Mobilidade</span>
             <p className="desc">
-              Gestão estratégica de frotas e otimização de rotas. Implementação de indicadores de performance e sistemas de controle operacional.
+              Gestão estratégica de frotas, telemetria e otimização. Implementação de indicadores de performance e sistemas de controle operacional.
             </p>
           </ExperienceItem>
 
@@ -215,7 +215,7 @@ const About = () => {
         viewport={{ once: true }}
       >
         <h3>💼 Disponibilidade & Modelos de Trabalho</h3>
-        <p>Trabalho com <strong>Modelo PJ</strong>, <strong>Projetos Estratégicos</strong> e <strong>Consultoria de IA</strong>. Foco total em gerar resultado real para sua operação.</p>
+        <p>Trabalho com <strong>Modelo PJ</strong>, <strong>Projetos Estratégicos</strong> e <strong>Consultoria de Soluções em TI</strong>. Foco total em gerar resultado real para sua operação.</p>
         <div className="grid">
           <div className="item">
             <h5>⚡ Resposta</h5>
