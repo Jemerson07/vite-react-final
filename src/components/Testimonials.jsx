@@ -31,9 +31,9 @@ export default function Testimonials() {
     },
     {
       text: "Jemerson transformou completamente nossa operação. A automação que implementou reduziu custos em 40% e aumentou a eficiência em 3x.",
-      author: "CEO, Empresa de Logística",
-      role: "Diretor Executivo",
-      icon: "⭐⭐⭐⭐⭐",
+      author: "Empresa de Logística",
+      role: "Gerente",
+      icon: "⭐⭐⭐",
     },
     {
       text: "Profissional excepcional. Sua análise de dados e insights estratégicos foram fundamentais para nossas decisões de negócio.",
@@ -43,9 +43,9 @@ export default function Testimonials() {
     },
     {
       text: "A auditoria que realizou identificou oportunidades de economia que não tínhamos visualizado. Retorno imediato e mensurável.",
-      author: "CFO, Empresa de Serviços",
-      role: "Diretor Financeiro",
-      icon: "⭐⭐⭐⭐⭐",
+      author: "Loja de Celulares",
+      role: "Empresário",
+      icon: "⭐⭐⭐⭐",
     },
   ];
 
