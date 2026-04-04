@@ -103,8 +103,8 @@ const Education = () => {
       type: "Especialização Acadêmica",
       title: "AWS Academy — Cloud Foundations",
       institution: "Amazon Web Services",
-      date: "2023 - Presente",
-      status: "Em andamento",
+      date: "Concluído",
+      status: "Certificado",
       icon: "☁️",
       description: "Foco em Cloud Architecture, Machine Learning e Infraestrutura Escalável."
     },
@@ -112,7 +112,7 @@ const Education = () => {
       type: "Especialização Acadêmica",
       title: "Cisco Academy — Cybersecurity Essentials",
       institution: "Cisco Systems",
-      date: "2023 - Presente",
+      date: "2026 - Presente",
       status: "Em andamento",
       icon: "🔒",
       description: "Domínio de Redes, Segurança da Informação e Infraestrutura Crítica."
