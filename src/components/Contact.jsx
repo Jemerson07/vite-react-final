@@ -133,7 +133,7 @@ const Contact = () => {
           </ContactCard>
 
           <ContactCard 
-            href="https://www.linkedin.com/in/jemersonsj" 
+            href="https://www.linkedin.com/in/jemerson-santos/" 
             target="_blank" 
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 30 }}
