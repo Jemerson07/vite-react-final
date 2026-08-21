@@ -18,8 +18,7 @@ Este é um **portfólio estratégico de alto impacto** desenvolvido com as melho
 - 🎨 **Dois Temas Premium**: Dark Apple (profissional) e Clean Marketing (minimalista)
 - ✦ **Animações Complexas**: Framer Motion com efeitos de glassmorphism e partículas flutuantes
 - 📊 **Storytelling Narrativo**: Jornada de evolução profissional com 5 capítulos
-- 🎯 **Impacto Quantificado**: R$ 400K+ recuperados, 5.000+ condutores gerenciados, 50+ automações
-- 💼 **Modelo PJ Destacado**: Transparência total sobre disponibilidade e modelos de trabalho
+- 🎯 **Impacto Quantificado**: R$ 120K+ recuperados, 5.000+ condutores gerenciados, 50+ automações
 - 🔍 **Benchmark Estratégico**: Comparativo com melhores portfólios do mercado
 - ⚡ **Performance Otimizada**: Build de 97KB gzipped, carregamento em <1s
 - 📱 **Totalmente Responsivo**: Funciona perfeitamente em desktop, tablet e mobile
@@ -153,7 +152,7 @@ npm run deploy
 - Descrições estratégicas
 
 ### 6. **Hiring**
-- 3 modelos de contratação (PJ, Projetos, Consultoria)
+- 2 modelos de contratação (Projetos, Consultoria)
 - 6 diferenciais principais
 - Transparência total
 
