@@ -147,17 +147,16 @@ const About = () => {
         >
           <h3>Especialista em <br /> Inteligência Operacional</h3>
           <p>
-            Sou um Analista de Sistemas, Operações e Processos com forte orientação para resultados e decisões baseadas em dados. 
-            Minha trajetória de 6 anos une experiência prática em IA, Gestão de Contratos, Automação com Python e Business Intelligence
-            aplicados diretamente ao crescimento e eficiência corporativa.
+           Foi nesse ambiente que desenvolvi uma visão orientada à performance, unindo operações, tecnologia e análise de dados para transformar desafios complexos em resultados concretos.
           </p>
           <p>
-            Hoje, na LM Mobilidade, atuo na vanguarda da implementação de IA, transformando discursos em execução estratégica. 
-            Desenvolvo automações que otimizam processos, reduzem erros operacionais e permitem decisões mais rápidas e precisas.
+            Na LM Mobilidade, gerenciei iniciativas que elevaram indicadores de controle operacional de 0,7% para mais de 90%, impactando mais de 5.000 usuários e aumentando significativamente a rastreabilidade dos processos.
+            Também identifiquei aproximadamente R$100 mil em custos não faturados através da análise de contratos, automação de validações e construção de indicadores estratégicos.
           </p>
           <p>
-            Minha abordagem combina disciplina técnica (ADS, AWS e Cisco Academy) com uma visão crítica de negócios, 
-            permitindo-me estruturar dados e sistemas que sustentam decisões de alto nível e geram impacto real no ROI.
+           Hoje utilizo Business Intelligence, Automação e Inteligência Artificial não apenas para criar dashboards ou sistemas, mas para gerar eficiência,
+            reduzir desperdícios e oferecer aos gestores a visibilidade necessária para tomar decisões mais rápidas e assertivas.
+            Meu trabalho começa entendendo operações e termina entregando resultado.
           </p>
           <div className="badges">
             <span className="badge">INTELIGÊNCIA OPERACIONAL</span>
@@ -178,8 +177,7 @@ const About = () => {
             <span className="company">LM Mobilidade</span>
             <p className="desc">
              Estruturação de indicadores, processos e controles para aumentar eficiência, rastreabilidade e governança operacional.
-              Resultado:
-              +5.000 usuários impactados
+              
             </p>
           </ExperienceItem>
 
@@ -193,8 +191,7 @@ const About = () => {
             <span className="company">LM Mobilidade</span>
             <p className="desc">
               Criação de dashboards, análises e KPIs que apoiam decisões estratégicas e permitem gestão baseada em dados.
-              Resultado:
-              +R$100 mil identificados em oportunidades
+            
             </p>
           </ExperienceItem>
 
@@ -208,8 +205,7 @@ const About = () => {
             <span className="company">Projetos Estratégicos</span>
             <p className="desc">
               Desenvolvimento de automações e soluções tecnológicas para eliminar atividades repetitivas, reduzir erros e aumentar produtividade.
-              Resultado:
-              30+ processos automatizados
+            
             </p>
           </ExperienceItem>
         </ExperienceList>
