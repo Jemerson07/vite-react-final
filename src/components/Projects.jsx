@@ -23,37 +23,37 @@ const itemVariants = {
 export default function Projects() {
   const projects = [
     {
-      title: "Automação de IA em Tempo Real",
+      title: "Inteligência Artificial Aplicada à Operação",
       img: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
       desc:
-        "Desenvolvimento e execução de uma IA estruturada para otimização de processos, apresentada em DDS na LM Mobilidade.",
-      impact: "Eficiência Imediata",
-      tag: "IA & Automação",
+        "Desenvolvimento de soluções utilizando Inteligência Artificial para padronização de processos, aumento de produtividade e suporte à tomada de decisão em ambientes corporativos.",
+      impact: "⚡ Automação Operacional",
+      tag: "🤖 IA Aplicada",
       link: "https://www.linkedin.com/posts/jemerson-santos_inteligenciaartificial-automacao-transformacaodigital-ugcPost-7441901618083766272-24s9"
     },
     {
-      title: "Gestão Estratégica de Frotas",
+      title: "Inteligência Operacional para Gestão de Frotas",
       img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
       desc:
-        "Otimização de fluxos operacionais e implementação de sistemas de rastreabilidade para frotas de grande escala.",
-      impact: "Redução de Custos",
-      tag: "Operações",
+        "Estruturação de controles, indicadores e processos para gestão de manutenção, telemetria, contratos e rastreabilidade de operações de grande escala.",
+      impact: "🚛 Fleet Analyticss",
+      tag: "📊 Eficiência Operacional",
     },
     {
-      title: "Dashboards de Business Intelligence",
+      title: "Data Analytics & Business Intelligence",
       img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
       desc:
-        "Criação de painéis estratégicos em Power BI para suporte à decisão executiva e monitoramento de KPIs.",
-      impact: "Decisões Data-Driven",
-      tag: "BI",
+        "Criação de dashboards executivos e indicadores de performance para acompanhamento dos principais resultados da operação e apoio à tomada de decisão.",
+      impact: "📊 KPIs Estratégicos",
+      tag: "📈 Data-Driven Decisions",
     },
     {
-      title: "Automação de Processos com Python",
+      title: "Automação Inteligente de Processos",
       img: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
       desc:
-        "Desenvolvimento de scripts e robôs para automação de tarefas repetitivas e integração de sistemas.",
-      impact: "50+ Automações",
-      tag: "Python",
+        "Desenvolvimento de automações para eliminar tarefas repetitivas, reduzir erros manuais e acelerar fluxos operacionais críticos.",
+      impact: "⚙️ Process Automation",
+      tag: "🐍 Python & Workflows",
     },
   ];
 
@@ -65,7 +65,7 @@ export default function Projects() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Projetos & Execução
+        Casos de Impacto
       </motion.h2>
 
       <motion.div
