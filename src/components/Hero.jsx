@@ -259,7 +259,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        🎓 AWS & Cisco Academy | Pós em IA
+       📊 +5.000 usuários impactados | 💰 +R$100 mil recuperados | 🤖 Automação & BI
       </Badge>
       
       <Title
@@ -267,7 +267,8 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
       >
-        Estrategista em IA, <br /> Dados & Automação
+        Especialista em Inteligência Operacional
+    
       </Title>
       
       <Subtitle
@@ -275,9 +276,10 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        Especialista em transformar processos complexos em soluções inteligentes. 
-        Focado em IA, Business Intelligence e Automação para empresas que buscam 
-        eficiência operacional e crescimento exponencial.
+        Transformo desafios operacionais em resultados mensuráveis.
+        Minha trajetória começou na operação, 
+        evoluiu para dados e encontrou na automação e na inteligência artificial uma forma de escalar eficiência.
+        Hoje ajudo empresas a reduzir custos, aumentar controle e tomar decisões melhores através de Business Intelligence, Dados, Automação e Tecnologia.
       </Subtitle>
       
       <ButtonGroup
@@ -285,7 +287,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
-        <PrimaryButton href="https://wa.me/5571991595758" target="_blank" rel="noopener noreferrer">
+        <PrimaryButton href="https://wa.me/5571981226313" target="_blank" rel="noopener noreferrer">
           💬 Contato Direto
         </PrimaryButton>
         <SecondaryButton href="#projects">
@@ -299,11 +301,11 @@ const Hero = () => {
         transition={{ duration: 1, delay: 0.5 }}
       >
         <StatItem>
-          <h3>R$ 400K+</h3>
+          <h3>R$ 100K+</h3>
           <p>Recuperados em Auditorias</p>
         </StatItem>
         <StatItem>
-          <h3>50+</h3>
+          <h3>10+</h3>
           <p>Automações Criadas</p>
         </StatItem>
         <StatItem>
@@ -311,7 +313,7 @@ const Hero = () => {
           <p>Dashboards Estratégicos</p>
         </StatItem>
         <StatItem>
-          <h3>6+</h3>
+          <h3>2+</h3>
           <p>Anos de Experiência</p>
         </StatItem>
       </StatsContainer>
