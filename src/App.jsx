@@ -66,17 +66,11 @@ export default function App() {
         {/* Formação & Certificações */}
         <Education />
 
-        {/* Resultados em Números */}
-        <Numbers />
-
         {/* Call-to-Action com impacto */}
         <CTA />
 
         {/* Perguntas Frequentes */}
         <FAQ />
-
-        {/* Benchmark - Comparativo com Melhores */}
-        <Benchmark />
 
         {/* Contato - PJ e Disponibilidade */}
         <Contact />
