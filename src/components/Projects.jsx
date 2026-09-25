@@ -55,6 +55,14 @@ export default function Projects() {
       impact: "⚙️ Process Automation",
       tag: "🐍 Python & Workflows",
     },
+     {
+      title: "Recuperação de Custos e Governança Contratual",
+      img: "https://www12.senado.leg.br/institucional/sis/noticias-comum/sis-paga-reembolso-ao-espolio-de-beneficiarios-que-morreram-antes-do-ressarcimento/@@images/image",
+      desc:
+        "Análise de contratos e dados operacionais para identificação de custos não faturados, inconsistências operacionais e oportunidades de recuperação financeira.",
+      impact: "💰 Cost Recovery",
+      tag: "📋 Contract Analytics",
+    },
   ];
 
   return (
