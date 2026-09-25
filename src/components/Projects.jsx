@@ -57,7 +57,7 @@ export default function Projects() {
     },
      {
       title: "Recuperação de Custos e Governança Contratual",
-      img: "https://www12.senado.leg.br/institucional/sis/noticias-comum/sis-paga-reembolso-ao-espolio-de-beneficiarios-que-morreram-antes-do-ressarcimento/@@images/image",
+      img: "https://www.istockphoto.com/br/fotos/reembolso-ilustra%C3%A7%C3%B5es",
       desc:
         "Análise de contratos e dados operacionais para identificação de custos não faturados, inconsistências operacionais e oportunidades de recuperação financeira.",
       impact: "💰 Cost Recovery",
