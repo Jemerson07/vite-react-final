@@ -259,7 +259,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-       📊 +5.000 usuários impactados | 💰 +R$100 mil recuperados | 🤖 Automação & BI
+       📊 +5.000 usuários impactados | 💰 +R$100 mil recuperados | 🚀 Da Operação à Inteligência de Negócios
       </Badge>
       
       <Title
@@ -276,10 +276,11 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        Transformo desafios operacionais em resultados mensuráveis.
-        Minha trajetória começou na operação, 
-        evoluiu para dados e encontrou na automação e na inteligência artificial uma forma de escalar eficiência.
-        Hoje ajudo empresas a reduzir custos, aumentar controle e tomar decisões melhores através de Business Intelligence, Dados, Automação e Tecnologia.
+     Minha carreira começou na operação, evoluiu para dados e encontrou na automação uma forma de gerar escala.
+     Hoje ajudo empresas a reduzir custos, aumentar controle operacional e tomar decisões mais inteligentes
+     através de Business Intelligence, Analytics e Automação.
+
+      
       </Subtitle>
       
       <ButtonGroup
@@ -301,20 +302,20 @@ const Hero = () => {
         transition={{ duration: 1, delay: 0.5 }}
       >
         <StatItem>
-          <h3>R$ 100K+</h3>
-          <p>Recuperados em Auditorias</p>
+          <h3>📊 Business Intelligence</h3>
+          <p>Transformo dados em indicadores estratégicos para decisões mais rápidas e precisas.</p>
         </StatItem>
         <StatItem>
-          <h3>10+</h3>
-          <p>Automações Criadas</p>
+          <h3>⚙️ Automação</h3>
+          <p>Reduzo atividades manuais através de fluxos inteligentes e processos escaláveis.</p>
         </StatItem>
         <StatItem>
-          <h3>30+</h3>
+          <h3>Conecto operações, tecnologia e dados para gerar eficiência real.</h3>
           <p>Dashboards Estratégicos</p>
         </StatItem>
         <StatItem>
-          <h3>2+</h3>
-          <p>Anos de Experiência</p>
+          <h3>🚀 0,7% → 92%</h3>
+          <p>Evolução no controle operacional registrado.</p>
         </StatItem>
       </StatsContainer>
     </HeroSection>
