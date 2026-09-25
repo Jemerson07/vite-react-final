@@ -310,7 +310,7 @@ const Hero = () => {
           <p>Reduzo atividades manuais através de fluxos inteligentes e processos escaláveis.</p>
         </StatItem>
         <StatItem>
-          <h3>🚀0,7% → 92%</h3>
+          <h3>🚀0,7%→92%</h3>
           <p>Evolução no controle operacional registrado.</p>
         </StatItem>
       </StatsContainer>
