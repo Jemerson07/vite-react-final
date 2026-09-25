@@ -23,42 +23,42 @@ const itemVariants = {
 export default function Story() {
   const chapters = [
     {
-      year: "2018-2020",
-      title: "O Início: Análise Operacional & Processos",
+     
+      title: "Fundação: Compreendendo as Operações",
       description:
-        "Iniciei minha trajetória focando em entender como as operações de negócio funcionam. Identifiquei os primeiros gargalos e comecei a aplicar lógica de sistemas para otimizar fluxos manuais com empresas de pequeno porte.",
+        "Minha carreira começou próximo dos desafios operacionais. Foi nesse período que desenvolvi uma visão crítica sobre processos, identificando gargalos, ineficiências e oportunidades de melhoria que impactavam diretamente os resultados. Antes da tecnologia, aprendi a entender o negócio.",
       icon: "🌱",
       color: "#8b5cf6",
     },
     {
-      year: "2020-2022",
-      title: "Evolução: TI",
+      
+      title: "Disciplina, Tecnologia e Resolução de Problemas",
       description:
-        "Servi às Forças Armadas, adquirindo experiência prática em infraestrutura de redes, suporte técnico e na criação de materiais didáticos de TI, fortalecendo minha base analítica e minha habilidade de traduzir tecnologia em conhecimento acessível.",
+        "A experiência na Marinha fortaleceu competências que carrego até hoje: disciplina, organização, trabalho sob pressão e pensamento estruturado. Nesse período também tive contato prático com infraestrutura e suporte tecnológico, ampliando minha visão sobre como a tecnologia sustenta operações críticas.",
       icon: "⚙️",
       color: "#0a84ff",
     },
     {
-      year: "2022-2024",
-      title: "Especialização: Automação & IA Aplicada",
+    
+      title: "Transformando Conhecimento em Soluções",
       description:
-        "Aprofundei em Python e ferramentas de IA para criar automações reais. Desenvolvi soluções que reduziram erros e ganharam escala, unindo o conhecimento acadêmico (ADS, AWS e Cisco) com a prática de mercado.",
+        "Com formação em Análise e Desenvolvimento de Sistemas, comecei a aplicar automação, análise de dados e inteligência artificial para resolver problemas reais. Foi nesse momento que deixei de apenas identificar oportunidades e passei a construir soluções capazes de gerar ganho de escala, produtividade e eficiência",
       icon: "🤖",
       color: "#34d399",
     },
     {
-      year: "2024-2025",
-      title: "Impacto: Execução Técnica & Apresentação",
+   
+      title: "Resultados em Escala",
       description:
-        "Atualmente na LM Mobilidade, foco em aplicar IA de forma estratégica. Realizo demonstrações técnicas (DDS) mostrando na prática como a tecnologia resolve problemas de eficiência e custo em tempo real.",
+        "Atuando na LM Mobilidade, passei a aplicar Business Intelligence, automação e análise operacional em projetos de grande porte. Contribuí para a identificação de aproximadamente R$100 mil em custos não faturados e participei de iniciativas que elevaram controles operacionais de 0,7% para mais de 90%, impactando milhares de usuários. Aqui a tecnologia deixou de ser ferramenta e passou a ser resultado.",
       icon: "🚀",
       color: "#ec4899",
     },
     {
-      year: "2026 em Diante",
-      title: "Visão: Liderança em Inovação Digital",
+     
+      title: "O Próximo Capítulo",
       description:
-        "Focado em expandir o impacto da IA nas operações brasileiras. Minha visão é liderar projetos de transformação digital que unam inteligência analítica com resultados financeiros exponenciais.",
+        "Meu objetivo é atuar em projetos globais onde dados, automação e inteligência operacional possam gerar impacto em larga escala. Busco oportunidades nacionais e internacionais que permitam combinar visão de negócio, tecnologia e inovação para construir operações mais eficientes, inteligentes e orientadas por resultados.",
       icon: "🌟",
       color: "#06b6d4",
     },
@@ -72,7 +72,7 @@ export default function Story() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        A Jornada: 6 Anos de Evolução e Impacto
+        Da Operação à Inteligência de Negócios
       </motion.h2>
 
       <motion.p
@@ -90,9 +90,9 @@ export default function Story() {
         transition={{ delay: 0.2, duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Minha trajetória é marcada pela transição da operação para a inteligência. 
-        Ao longo de 6 anos, refinei minha capacidade de identificar ineficiências e 
-        construir soluções tecnológicas que geram valor real e imediato.
+        Não cheguei à Inteligência Artificial por tendência. Cheguei porque passei anos lidando com processos que poderiam ser melhores, decisões que poderiam ser mais rápidas e informações que poderiam gerar mais valor.
+        Essa busca por eficiência me levou do ambiente operacional ao universo dos dados,
+        Business Intelligence e Automação. Hoje, utilizo tecnologia para transformar desafios do dia a dia em soluções escaláveis, inteligentes e orientadas a resultados.
       </motion.p>
 
       <motion.div
