@@ -57,7 +57,7 @@ export default function Projects() {
     },
      {
       title: "Recuperação de Custos e Governança Contratual",
-      img: "https://www.istockphoto.com/br/fotos/reembolso-ilustra%C3%A7%C3%B5es",
+      img: "https://images.unsplash.com/photo-1737064265670-445899289c4a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc:
         "Análise de contratos e dados operacionais para identificação de custos não faturados, inconsistências operacionais e oportunidades de recuperação financeira.",
       impact: "💰 Cost Recovery",
