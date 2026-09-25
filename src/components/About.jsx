@@ -145,7 +145,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <h3>Estrategista em <br /> Soluções de Impacto</h3>
+          <h3>Especialista em <br /> Inteligência Operacional</h3>
           <p>
             Sou um Analista de Sistemas, Operações e Processos com forte orientação para resultados e decisões baseadas em dados. 
             Minha trajetória de 6 anos une experiência prática em IA, Gestão de Contratos, Automação com Python e Business Intelligence
@@ -160,10 +160,10 @@ const About = () => {
             permitindo-me estruturar dados e sistemas que sustentam decisões de alto nível e geram impacto real no ROI.
           </p>
           <div className="badges">
-            <span className="badge">IA & Automação</span>
+            <span className="badge">INTELIGÊNCIA OPERACIONAL</span>
             <span className="badge">Business Intelligence</span>
-            <span className="badge">Python & Dados</span>
-            <span className="badge">Gestão de Frotas</span>
+            <span className="badge">AUTOMAÇÃO DE PROCESSOS</span>
+            <span className="badge">FROTAS & TELEMETRIA</span>
           </div>
         </TextBlock>
 
@@ -174,10 +174,12 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <h4>Analista de Sistemas e Processos</h4>
+            <h4>Inteligência Operacional</h4>
             <span className="company">LM Mobilidade</span>
             <p className="desc">
-              Foco em Inteligência Artificial e Automação. Implementação de soluções de IA em tempo real para otimização de performance e redução de custos operacionais.
+             Estruturação de indicadores, processos e controles para aumentar eficiência, rastreabilidade e governança operacional.
+              Resultado:
+              +5.000 usuários impactados
             </p>
           </ExperienceItem>
 
@@ -187,10 +189,12 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <h4>Analista de Frotas & Operações</h4>
+            <h4>Analytics & Business Intelligence</h4>
             <span className="company">LM Mobilidade</span>
             <p className="desc">
-              Gestão estratégica de frotas, telemetria e otimização. Implementação de indicadores de performance e sistemas de controle operacional.
+              Criação de dashboards, análises e KPIs que apoiam decisões estratégicas e permitem gestão baseada em dados.
+              Resultado:
+              +R$100 mil identificados em oportunidades
             </p>
           </ExperienceItem>
 
@@ -200,10 +204,12 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            <h4>Consultoria em Dados & Automação</h4>
+            <h4>Automação & Tecnologia</h4>
             <span className="company">Projetos Estratégicos</span>
             <p className="desc">
-              Desenvolvimento de dashboards em Power BI e scripts de automação em Python para diversos segmentos, focando em eficiência e clareza analítica.
+              Desenvolvimento de automações e soluções tecnológicas para eliminar atividades repetitivas, reduzir erros e aumentar produtividade.
+              Resultado:
+              30+ processos automatizados
             </p>
           </ExperienceItem>
         </ExperienceList>
