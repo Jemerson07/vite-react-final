@@ -11,12 +11,10 @@ import Projects from "./components/Projects.jsx";
 import Services from "./components/Services.jsx";
 import Testimonials from "./components/Testimonials.jsx";
 import Education from "./components/Education.jsx";
-import Numbers from "./components/Numbers.jsx";
 import Hiring from "./components/Hiring.jsx";
 import ProcessFlow from "./components/ProcessFlow.jsx";
 import CTA from "./components/CTA.jsx";
 import FAQ from "./components/FAQ.jsx";
-import Benchmark from "./components/Benchmark.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
