@@ -196,7 +196,7 @@ npm run deploy
 Não apenas listar experiências. Contar a história de evolução de 2014 até hoje, mostrando como cada fase levou à maestria atual.
 
 ### 2. **Impacto Quantificado**
-- R$ 400K+ recuperados em auditorias
+- R$ 120K+ recuperados em auditorias
 - 5.000+ condutores gerenciados
 - 50+ automações criadas
 - 30+ dashboards estratégicos
