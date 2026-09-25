@@ -86,7 +86,7 @@ export default function CTA() {
         transition={{ delay: 0.4, duration: 0.8 }}
         viewport={{ once: true }}
       >
-        ⚡ Resposta em até 24 horas • 💼 Modelo PJ disponível • 📊 Projetos de impacto
+        ⚡ Resposta em até 24 horas • 📊 Projetos de impacto
       </motion.p>
     </motion.section>
   );
