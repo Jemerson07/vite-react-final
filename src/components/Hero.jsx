@@ -302,19 +302,19 @@ const Hero = () => {
         transition={{ duration: 1, delay: 0.5 }}
       >
         <StatItem>
-          <h3>📊 Business Intelligence</h3>
+          <h3>Business Intelligence</h3>
           <p>Transformo dados em indicadores estratégicos para decisões mais rápidas e precisas.</p>
         </StatItem>
         <StatItem>
-          <h3>⚙️ Automação</h3>
+          <h3>Automação</h3>
           <p>Reduzo atividades manuais através de fluxos inteligentes e processos escaláveis.</p>
         </StatItem>
         <StatItem>
-          <h3>Conecto operações, tecnologia e dados para gerar eficiência real.</h3>
-          <p>Dashboards Estratégicos</p>
+          <h3>Inteligência Operacional</h3>
+          <p>Conecto operações, tecnologia e dados para gerar eficiência real.s</p>
         </StatItem>
         <StatItem>
-          <h3>🚀 0,7% → 92%</h3>
+          <h3>🚀0,7% → 92%</h3>
           <p>Evolução no controle operacional registrado.</p>
         </StatItem>
       </StatsContainer>
